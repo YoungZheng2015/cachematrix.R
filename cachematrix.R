@@ -1,5 +1,3 @@
-## Coursera R Programming Assignment 2
-
 ## 'makeCacheMatrix' function creates a special "matrix" object 
 ## that can cache its inverse.
 
@@ -14,11 +12,11 @@ makeCacheMatrix <- function(x = matrix()) {
         get <- function() x     	# Create a function 'get' in the 'makeCacheMatrix'
                                 	# parent and assign the matrix to it.
         setinverse <- function (inverse) {
-        i <<- inverse			        # Take a value ('inverse') and set it to the
+        i <<- inverse			# Take a value ('inverse') and set it to the
                                 	# value of 'i' in the 'makeCacheMatrix' frame.
 }
         getinverse <- function() i 	# return the value of 'i' from the
-                                	  # 'makeCacheMatrix' frame.
+                                	# 'makeCacheMatrix' frame.
         list(set = set, get = get,  # List out the values of the functions in the
         setinverse = setinverse,    # 'makeCacheMatrix' frame.
         getinverse = getinverse)
